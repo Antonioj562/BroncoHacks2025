@@ -1,0 +1,16 @@
+.line-graph-wrapper {
+    background-color: #f8f8ff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+  text-align: center;
+  }
+  
+  .line-graph-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
