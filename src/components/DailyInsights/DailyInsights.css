@@ -21,6 +21,14 @@
     color: #333;
   }
   
+  .insight-chart {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #f9f6ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
   .insight-icon {
     font-size: 1.5rem;
   }

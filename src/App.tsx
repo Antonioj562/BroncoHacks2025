@@ -1,6 +1,5 @@
 import './App.css'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
-import DashboardPanel from './components/DashboardPanel/DashboardPanel';
 import GreetUser from './components/GreetUser/GreetUser';
 import Streak from './components/Streak/Streak';
 import DailyInsight from './components/DailyInsights/DailyInsights';
@@ -23,7 +22,6 @@ function App() {
       <TopBar />
     
       <div className="main-layout">
-        <DashboardPanel />
       <div className="content-area">
         <GreetUser />
 
