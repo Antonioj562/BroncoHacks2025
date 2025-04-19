@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Streak.css';
+import './streak.css';
 
 const Streak = () => {
   const [streak, setStreak] = useState<number>(0);

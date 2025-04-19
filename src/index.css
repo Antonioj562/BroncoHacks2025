@@ -75,5 +75,8 @@ header {
 }
 
 body {
+  display: flex;
   background-color: #C0C0D8;
+  align-items: center;
+  justify-content: center;
 }
