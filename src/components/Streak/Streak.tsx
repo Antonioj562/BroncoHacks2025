@@ -4,8 +4,9 @@ import './streak.css';
 
 
 const Streak: React.FC = () => {
-  const { getToken } = useAuth();            // getToken() from Clerk :contentReference[oaicite:1]{index=1}
+  const { getToken } = useAuth();          
   const [highest, setHighest] = useState<number>(0);
+  const [current, setCurrent] = useState<number>(0);
 
   useEffect(() => {
     const fetchStreak = async () => {
@@ -18,8 +19,9 @@ const Streak: React.FC = () => {
           }
         });
         if (!res.ok) throw new Error(res.statusText);
-        const { highestStreak } = await res.json();
+        const { highestStreak, currentStreak } = await res.json();
         setHighest(highestStreak);
+        setCurrent(currentStreak);
       } catch (err) {
         console.error('Failed to fetch streak:', err);
       }
@@ -32,6 +34,9 @@ const Streak: React.FC = () => {
       <span className="emoji">🔥</span>
       <span className="text">
         Highest Streak: {highest} day{highest !== 1 ? 's' : ''}
+      </span>
+      <span>
+        Current Streak: {current}
       </span>
     </div>
   );
