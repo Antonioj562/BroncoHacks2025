@@ -14,6 +14,13 @@ const GreetUser: React.FC = () => {
     const name = user.firstName || user.fullName || 'there';
     const avatarUrl = user.imageUrl; 
 
+    const getGreeting = () => {
+      const hour = new Date().getHours();
+      if (hour < 12) return 'Good morning';
+      if (hour < 18) return 'Good afternoon';
+      return 'Good evening';
+    };
+    
     return (
       <div className="greet-user-container">
         <img
@@ -21,7 +28,7 @@ const GreetUser: React.FC = () => {
           alt={`${name}'s avatar`}
           className="greet-user-avatar"
         />
-        <p>Hello, {name}! Don&apos;t forget to log your mood today!</p>
+        <p>{getGreeting()}, {name}! Don&apos;t forget to log your mood today 💜</p>
       </div>
     );
 };
