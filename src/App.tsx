@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import DashboardPanel from './components/DashboardPanel/DashboardPanel';
@@ -10,7 +9,6 @@ import TipsCard from './components/TipsCard/TipsCard';
 import TopBar from './components/TopBar/TopBar';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -42,7 +40,6 @@ function App() {
         <TipsCard />
       </div>
     </div>
-
     </>
   )
 }
