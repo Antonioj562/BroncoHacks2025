@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 } */
+
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px; /* space between dashboard and insights */
+  align-items: flex-start; /* align to top */
+  margin-top: -40px
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.mood-streak-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* helps for small screens */
+  margin-bottom: 20px;
+}

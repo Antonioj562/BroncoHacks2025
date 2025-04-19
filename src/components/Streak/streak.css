@@ -1,9 +1,23 @@
-.streak {
-    background-color: #fff8e1;
-    border: 1px solid #ffd54f;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    color: #ff6f00;
-    margin-top: 10px;
+  .streak {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ededff;
+    border-radius: 20px;
+    height: 240.3px;
+    width: 569.9px;
+    margin-top: -280px;
+    margin-left: 550px;
+  }
+
+  .emoji {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
   }

@@ -1,0 +1,24 @@
+.tips-card {
+    background-color: #f5eaff;
+    border-radius: 20px;
+    color: #333;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    height: 370.6px;
+    width: 569.9px;
+    margin-left: 550px;
+    margin-top: -390px;
+  }
+
+  .tips-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 16px;
+    color: #5f4b8b;
+  }
+
+  .tip-item {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }

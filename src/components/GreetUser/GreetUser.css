@@ -1,0 +1,25 @@
+.greet-user-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 1120px;
+    height: 122.5px;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .greet-user-container img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left:20px
+  }
+  
+  .greet-user-container p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+  }

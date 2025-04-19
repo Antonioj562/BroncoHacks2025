@@ -1,0 +1,27 @@
+.daily-insight-container {
+  background-color: #ededff;
+  max-width: 500px;
+  height: 370.6px;
+  border-radius: 20px;
+  margin-top: -30px;
+  }
+  
+  .daily-insight-container h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .insight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .insight-icon {
+    font-size: 1.5rem;
+  }
+  

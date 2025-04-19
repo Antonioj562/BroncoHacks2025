@@ -4,6 +4,10 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-reac
 import DashboardPanel from './components/DashboardPanel/DashboardPanel';
 import GreetUser from './components/GreetUser/GreetUser';
 import Streak from './components/Streak/Streak';
+import DailyInsight from './components/DailyInsights/DailyInsights';
+import MoodSelector from './components/MoodSelector/MoodSelector';
+import TipsCard from './components/TipsCard/TipsCard';
+import TopBar from './components/TopBar/TopBar';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,18 +22,26 @@ function App() {
           <UserButton />
         </SignedIn>
       </header>
-
-      <div>
+      <TopBar />
+    
+      <div className="main-layout">
         <DashboardPanel />
-      </div>
-
-      <div>
+      <div className="content-area">
         <GreetUser />
-      </div>
 
-      <div>
-        <Streak />
+       
+          <div>
+            <MoodSelector />
+          </div>
+
+          <div>
+            <Streak />
+          </div>
+
+        <DailyInsight />
+        <TipsCard />
       </div>
+    </div>
 
     </>
   )

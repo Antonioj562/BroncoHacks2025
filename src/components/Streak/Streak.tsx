@@ -29,7 +29,8 @@ const Streak = () => {
 
   return (
     <div className="streak">
-      🔥 Streak: {streak} day{streak !== 1 ? 's' : ''}
+      <span className="emoji">🔥</span>
+      <span className="text">Streak: {streak} day{streak !== 1 ? 's' : ''}</span>
     </div>
   );
 };

@@ -1,25 +1,31 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+// function App() {
+//   return (
+//     <>
+//       <div className="Dashboard_Panel">
+//         <button className="dashboard">Dashboard</button>
+//         <button className="setting">Setting</button>
+//       </div>
+//     </>
+//   )
+// }
 
+// export default 
+
+import React from 'react';
+import './DashboardPanel.css';
+
+const DashboardPanel: React.FC = () => {
   return (
     <>
-      <div>
-        <p></p>
-        <p>Track your mind, understand your mood!</p>
-      </div>
-
       <div className="Dashboard_Panel">
         <button className="dashboard">Dashboard</button>
-        <button className="setting">Setting</button>
-      </div>
+        <button className="setting">Settings</button>
 
-      <div>
-        <p>Hello, </p>
-      </div>
+        </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default DashboardPanel;
