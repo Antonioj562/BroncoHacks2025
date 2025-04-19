@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import DashboardPanel from './components/DashboardPanel/DashboardPanel';
+import GreetUser from './components/GreetUser/GreetUser';
+import Streak from './components/Streak/Streak';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,20 +20,21 @@ function App() {
       </header>
 
       <div>
-        <p></p>
-        <p>Track your mind, understand your mood!</p>
+        <DashboardPanel />
       </div>
 
-      <div class="Dashboard_Panel">
-        <button>Dashboard</button>
-        <button>Setting</button>
-      </div>
-      
       <div>
-        <p>Hello, </p>
+        <GreetUser />
       </div>
+
+      <div>
+        <Streak />
+      </div>
+
     </>
   )
 }
 
 export default App
+
+
